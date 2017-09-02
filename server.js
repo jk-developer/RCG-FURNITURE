@@ -16,7 +16,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine","ejs");
 
 app.use(express.static(__dirname+"/public"));
-mongoose.connect
+
 
 var DBURL = process.env.url;
 if(!DBURL)
