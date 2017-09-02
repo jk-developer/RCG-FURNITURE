@@ -38,7 +38,7 @@ app.use(productRoute);
 //=====================
 // Listening Port
 //=====================
-app.listen(2000 || process.env.port, function()           
+app.listen(process.env.port||2000, function()           
 {
     
    console.log("Server is started on port : 2000"); 
