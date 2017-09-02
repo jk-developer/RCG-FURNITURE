@@ -8,7 +8,12 @@ var express     =require("express"),
     //Routes
     
     indexRoute = require("./routes/index.js"),
-    productRoute = require('./routes/product.js');
+    productRoute = require('./routes/product.js'),
+    contactRoute  = require('./routes/contact.js'),
+    loginRoute   =  require("./routes/login.js"),
+    aboutRoute   =  require("./routes/about.js"),
+    signupRoute   =  require("./routes/signup.js");
+
     
     
 
@@ -17,6 +22,8 @@ app.set("view engine","ejs");
 
 app.use(express.static(__dirname+"/public"));
 
+
+// connect to mongodb database 
 
 var DBURL = process.env.url;
 if(!DBURL)
@@ -30,7 +37,10 @@ mongoose.connect(DBURL);
 
 app.use(indexRoute);
 app.use(productRoute);
-
+app.use(contactRoute);
+app.use(loginRoute);
+app.use(aboutRoute);
+app.use(signupRoute);
 //*********************************
 
 

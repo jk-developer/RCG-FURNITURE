@@ -1,8 +1,7 @@
-
 var router = require('express').Router();
 
- router.get("/about", function(req, res){
-   res.render("about"); 
+router.get("/signup", function(req, res){
+   res.render("signup"); 
 });
 
 module.exports = router;
