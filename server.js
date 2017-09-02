@@ -16,9 +16,13 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine","ejs");
 
 app.use(express.static(__dirname+"/public"));
-mongoose.connect("mongodb://localhost/RCG_furniture")
+mongoose.connect
 
+var DBURL = process.env.url;
+if(!DBURL)
+    {  DBURL = "mongodb://localhost/RCG_furniture"}
 
+mongoose.connect(DBURL);
 
 //================================
 //    Routes Configuration
@@ -34,7 +38,7 @@ app.use(productRoute);
 //=====================
 // Listening Port
 //=====================
-app.listen(2000, function()           
+app.listen(2000 || process.env.port, function()           
 {
     
    console.log("Server is started on port : 2000"); 
