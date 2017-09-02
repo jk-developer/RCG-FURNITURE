@@ -1,0 +1,38 @@
+<% include ../partials/header %>
+
+<form action="/products/beds" method="POST" >
+    
+    
+ <div class="form-group">
+<input type="text" class="form-control" name= "product[type]" placeholder="Type" >
+    </div>
+    <div class="form-group">
+    
+    <input type="text" class="form-control" name="product[title]" placeholder="title">
+    
+    
+    </div>
+ <div class="form-group">   
+<input type="text"  class="form-control" name= "product[image]" placeholder="Image URL" >    
+     
+    </div>
+    
+   <div class="form-group">   
+<input type="text"  class="form-control" name= "product[sh_desc]" placeholder="Short Description" >
+    </div>
+    
+    
+    <div class="form-group">   
+<input type="text"  class="form-control" name= "product[variety]" placeholder="Variety" >
+    </div>
+    
+<button class="btn btn-primary">Submit</button>
+
+</form>
+
+
+
+
+
+
+<% include ../partials/footer %>

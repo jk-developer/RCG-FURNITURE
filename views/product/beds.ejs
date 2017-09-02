@@ -1,0 +1,102 @@
+<% include ../partials/header %>
+
+<div class="product-beds">
+    
+<div class="container container-product">
+
+<div class="jumbotron jumbotron-product" >
+    <h1 class="caption">Beds</h1>
+    
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley </p>
+    
+    </div>    
+    </div>
+
+</div>
+
+
+
+<div class="container">
+    
+<div class="row">
+    
+    <div class="col-md-3">
+        <a href="/products/new" class="btn btn-primary btn-danger">Upload</a>
+    
+        <h2>Categories</h2>
+
+    <div class = "row">
+        
+        <div class="col-md-12">
+        <iframe name='useless' style='display:none'></iframe>
+         <form class="radio-form" target='useless'>
+            
+       <div class="radio">
+  <label class="radiobutton">
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="Single Bed" >
+    Single Bed
+  </label>
+</div>
+<div class="radio">
+  <label class="radiobutton">
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="Double Bed">
+   Double Bed
+  </label>
+</div>
+        
+    <div class="radio">
+  <label class="radiobutton">
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="All" checked>
+    All
+  </label>
+</div>     
+
+    </form>            
+        </div>
+        
+        
+        </div>
+    </div>
+    
+    <div class="col-md-9  product-container product-grid">
+    
+    <div class="row" style="display:flex; flex-wrap:wrap;" id="row-product">
+
+<% Product.forEach(function(product){ 
+        
+ if(product.type==='bed') {   %>
+<div class="col-md-4 col-sm-6 col-xs-12 col-product">
+    <div class="thumbnail thumbnail-product">
+    <img src="<%= product.image %>" >
+        
+    <div class="caption">
+      <h3> <%= product.title %> </h3>
+        <p><%= product.sh_desc %></p>
+
+        </div>
+        
+        <a href="#" class=" btn btn-primary"><span class="glyphicon glyphicon-info-sign"></span> More Info</a>
+    
+    </div>
+
+    <hr class="product-divider">
+    
+    
+</div>
+
+<% }}); %>
+
+</div>
+    
+    
+    </div>
+    
+    </div>
+
+
+
+</div>
+
+
+
+<% include ../partials/footer %>
