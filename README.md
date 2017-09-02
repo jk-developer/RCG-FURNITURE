@@ -4,7 +4,7 @@
 > Developed by :
 
 ```
-Mukesh Gupta & Jitendra Kumar
+Jitendra Kumar
 
 ```
 
