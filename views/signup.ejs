@@ -2,20 +2,20 @@
 
 <h1>sign up </h1>
 
-<form>
+<form action="/index" method="POST">
   <div class="form-row">
       <div class="form-group">
     <label for="inputUsername" class="col-form-label">Username</label>
-    <input type="text" class="form-control" id="inputUsername" placeholder="Username">
+    <input type="text" name = "user[username]" class="form-control" id="inputUsername" placeholder="Username">
   </div>
       
     <div class="form-group">
       <label for="inputEmail4" class="col-form-label">Email</label>
-      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+      <input type="email" name = "user[email]" class="form-control" id="inputEmail4" placeholder="Email">
     </div>
     <div class="form-group">
       <label for="inputPassword4" class="col-form-label">Password</label>
-      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+      <input type="password" name = "user[password]" class="form-control" id="inputPassword4" placeholder="Password">
     </div>
   </div>
   

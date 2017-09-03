@@ -93,7 +93,7 @@ router.post("/products/beds", function(req, res)
             {
                 return console.log(err);
             }
-        console.log("Ne Product added : ", product);
+        console.log("New Product added : ", product);
         
         res.redirect("/products/beds");
         
