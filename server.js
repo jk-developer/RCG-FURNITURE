@@ -2,6 +2,9 @@ var express     =require("express"),
     app         =express(),
     bodyParser  =require('body-parser'),
     mongoose    =require("mongoose"),
+    passport    =require("passport"),
+    localStrategy = require('passport-local').Strategy;
+    session  = require('express-session'),
     
     
     
@@ -15,7 +18,17 @@ var express     =require("express"),
     signupRoute   =  require("./routes/signup.js");
 
     
-    
+ // Handle express Sessions
+app.use(session({
+    secret:'secret',
+    saveUninitialized: true,
+    resave: true
+}));
+
+// Passport
+app.use(passport.initialize());
+app.use(passport.session());
+
 
 app.use(bodyParser.urlencoded({extended:true}));
 app.set("view engine","ejs");

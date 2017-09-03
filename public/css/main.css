@@ -17,8 +17,11 @@ body{
 
 .info{
     display: inline-block;
-    
+    font-size: 1.7em;
+    color: white;
 }
+
+
 
 /*
 .address img{
@@ -26,6 +29,9 @@ body{
     height: 210px;
 }
 */
+#head1{
+    margin-left: 35%;
+}
 
 .navbar{
     
@@ -40,6 +46,51 @@ body{
 /*    height: 9%;*/
 }
 
+h2 .head{
+    margin: 0 auto;
+}
+
+span{
+    font-weight: 600;
+}
+
+.backimage{
+   background-image: url(http://fullcircleclinicaleducation.com/wp-content/uploads/2015/08/CTO_serv_background.jpg);
+    height: 100%;
+    width: 100%;
+}
+.container .jumbotron, .container-fluid .jumbotron {
+    margin-top: 8%;
+    background-color: black;
+    opacity: .6;
+}
+.container .textcolor{
+    color: white;
+    
+}
+.address
+{  color: white;
+   margin-bottom: 40px;
+}
+
+.info .marg{
+   font-size: 1em;
+}
+
+.jumbotron .heading{
+    margin: 0 auto;
+    font-size: xx-large;
+    font-weight: bold;
+    padding-bottom: 25px;
+    color: white;
+}
+.address #time{
+    font-size: 1.4em;
+}
+
+.container p{
+  font-size: 1.3em;
+}
 
 .navbar-default .navbar-nav>li>a {
     
@@ -47,6 +98,11 @@ body{
     color:white;
     font-weight: normal;
     font-size: medium;
+}
+
+.address .head{
+    margin-left: 32%;
+    font-size: 2em;
 }
 
 
@@ -254,6 +310,9 @@ word-wrap: break-word;
     
     bottom: 5px;
     
+}
+.container p{
+    font-size: 1.6em;
 }
 
 

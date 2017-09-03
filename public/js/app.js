@@ -22,6 +22,7 @@ $('.ui.dropdown .menu').on('click',function()        //Bug fix
 });
 
 
+
  //make image height equal
 
 function resizeImage()
