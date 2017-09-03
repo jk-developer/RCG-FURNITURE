@@ -1,17 +1,49 @@
 <% include partials/header %>
 
+<style>
+.signinpage{
+   background-image: url(http://fullcircleclinicaleducation.com/wp-content/uploads/2015/08/CTO_serv_background.jpg);
+    height: 100%;
+    width: 100%;
+   
+}
+ .container .jumbotron{
+        color: white;
+    }
+    
+.container .jumbotron h1{
+     font-size: 30px;
+     margin-bottom: 30px;
+    }   
+    .form-group .caption{
+        font-size:17px;
+    }  
+    .btn-primary{
+        margin-top: 20px;
+        width: 110px;
+        background-color:#0d2eda;
+        border-color:#0d2eda;
+        font-size: 1.2em;
+    }
+    
+    </style>
+
+
 <body class="signinpage">
-<h1>log in page</h1>
+    
+<div class="container"> 
+    <div class="jumbotron">    
+<h1>Log in here</h1>
 
 
 <form>
   <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
+    <label for="exampleInputEmail1" class="caption">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
+    <label for="exampleInputPassword1" class="caption">Password</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
   </div>
   <div class="form-check">
@@ -22,6 +54,7 @@
   </div>
   <button type="submit" class="btn btn-primary">Submit</button>
 </form>
-
+    </div>
+    </div>
 </body>
 <% include partials/footer %>

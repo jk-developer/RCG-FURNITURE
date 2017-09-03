@@ -1,6 +1,4 @@
 
-
-
 html{
     
     height: 100%;
@@ -54,11 +52,7 @@ span{
     font-weight: 600;
 }
 
-.backimage{
-   background-image: url(http://fullcircleclinicaleducation.com/wp-content/uploads/2015/08/CTO_serv_background.jpg);
-    height: 100%;
-    width: 100%;
-}
+
 .container .jumbotron, .container-fluid .jumbotron {
     margin-top: 8%;
     background-color: black;
